@@ -19,10 +19,10 @@ $ sudo vi /var/log/mysqld.log
 5. mysql 기동
 $ sudo systemctl start mysqld
 
-5. mysql root로 접속 (임시비밀번호로)
+6. mysql root로 접속 (임시비밀번호로)
 $ mysql -u root -p
 
-6. root 패스워드 변경
+7. root 패스워드 변경
 mysql>  ALTER USER 'root'@'localhost' identified by '{신규비밀번호}';
 
 # 2. 환경설정
