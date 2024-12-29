@@ -42,7 +42,7 @@ mysql> grant all privileges on {DB명}.* to '{사용자명}'@'%' with grant opti
 mysql> flush privileges; - 권한 리플레쉬
 
 5. DB접속 정보
-> DB서버주소 : ec2-43-201-70-47.ap-northeast-2.compute.amazonaws.com
-> 접속port : 3306
-> 접속DB : {DB명}
-> 접속계정 : {사용자명}
+- DB서버주소 : ec2-XXXXXX.compute.amazonaws.com
+- 접속port : 3306
+- 접속DB : {DB명}
+- 접속계정 : {사용자명}
