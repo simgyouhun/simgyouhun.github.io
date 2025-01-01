@@ -5,7 +5,7 @@ title: "AWS EC2서버에 MySql 설치순서"
 # 1. MySql 설치 (ec2-user로 수행)
 1.rpm 설치
 
-$ sudo dnf install https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm -- 2024.12.29 현재 최신버전
+`$ sudo dnf install https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm` -- 2024.12.29 현재 최신버전
 
 2.GPG키 업데이트 -- 기 설치된 mysql GPG키가 맞지 않음. 업데이트 필요
 
