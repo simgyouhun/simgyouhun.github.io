@@ -9,8 +9,8 @@ title: "AWS EC2서버에 MySql 설치순서"
 
 2.GPG키 업데이트 -- 기 설치된 mysql GPG키가 맞지 않음. 업데이트 필요
 
-$ sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
-$ sudo yum update
+`$ sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023`
+`$ sudo yum update`
 
 3.mysql 설치
 
