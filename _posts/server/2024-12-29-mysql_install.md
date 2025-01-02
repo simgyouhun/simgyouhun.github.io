@@ -10,7 +10,7 @@ $ sudo dnf install https://dev.mysql.com/get/mysql80-community-release-el9-1.noa
 
 ### 2.GPG키 업데이트 -- 기 설치된 mysql GPG키가 맞지 않음. 업데이트 필요
 ```
-$ sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023`
+$ sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
 $ sudo yum update
 ```
 
@@ -19,7 +19,7 @@ $ sudo yum update
 $ sudo dnf install mysql-community-server
 ```
 
-### 4./var/log/mysqld.log에서 root 임시비밀번호 확인 : {임시비밀번호}
+### 4./var/log/mysqld.log에서 root 임시비밀번호 확인
 ```
 $ sudo vi /var/log/mysqld.log
 ```
@@ -29,14 +29,14 @@ $ sudo vi /var/log/mysqld.log
 $ sudo systemctl start mysqld
 ```
 
-### 6. mysql root로 접속 (임시비밀번호로)
+### 6. mysql root로 접속 (4번에서 확인한 임시비밀번호로)
 ```
 $ mysql -u root -p
 ```
 
 ### 7. root 패스워드 변경
 ```
-mysql>  ALTER USER 'root'@'localhost' identified by '{신규비밀번호}';
+mysql>  ALTER USER 'root'@'localhost' identified by '신규비밀번호';
 ```
 # 2. 환경설정
 ### 1. 기본환경설정 - 캐릭터셋,테이블명대소문자구분
